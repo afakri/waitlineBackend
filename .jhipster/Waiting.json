@@ -1,0 +1,36 @@
+{
+  "annotations": {
+    "changelogDate": "20240117095712"
+  },
+  "entityTableName": "waiting",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "phone",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "timeArrived",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "timeSummoned",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "timeDone",
+      "fieldType": "Instant"
+    }
+  ],
+  "name": "Waiting",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "no"
+}

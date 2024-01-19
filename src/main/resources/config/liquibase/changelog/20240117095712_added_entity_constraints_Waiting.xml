@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <!--
+        Added the constraints for entity Waiting.
+    -->
+    <changeSet id="20240117095712-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="queue_id"
+                                 baseTableName="waiting"
+                                 constraintName="fk_waiting__queue_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="queue"
+                                 />
+    </changeSet>
+</databaseChangeLog>
